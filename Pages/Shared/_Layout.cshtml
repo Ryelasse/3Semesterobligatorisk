@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - _3Semesterobligatorisk</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/_3Semesterobligatorisk.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <h5 class="text-center">
+            <a href="https://www.zealand.dk/">Erhvervsakademi Sjælland</a> ~ Anders Børjesson
+        </h5>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Zealand</h4>
+                    <ul>
+                        <li><a href="#">Maglegaardsvej 2</a></li>
+                        <li><a href="#">4000 Roskilde</a></li>
+                        <li><a href="tel:+4550762600">50 76 26 00</a></li>
+                        <li><a href="mailto:zealand@zealand.dk">zealand@zealand.dk</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Diverse links</h4>
+                    <ul>
+                        <li><a href="https://learn.microsoft.com/da-dk/">Microsoft dev. net</a></li>
+                        <li><a href="https://learn.microsoft.com/da-dk/docs/">MSDN Lib</a></li>
+                        <li><a href="https://anbo-easj.dk/bekendtgoerelser/">Bekendtgørelser</a></li>
+                        <li><a href="https://anbo-easj.dk/index.htm">Index</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Om mig</h4>
+                    <ul>
+                        <li><a href="mailto:anbo@zealand.dk">anbo@zealand.dk</a></li>
+                        <li><a href="https://anbo-easj.dk/cv/">CV</a></li>
+                        <li><a href="https://anbo-easj.dk/index2.htm">Original side</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Sociale links</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/zealandacademy/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/ZealandAcademy"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/zealand_academy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/school/zealand-sj%C3%A6llands-erhvervsakademi/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+ 
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
